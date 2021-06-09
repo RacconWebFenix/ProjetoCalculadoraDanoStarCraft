@@ -37,8 +37,10 @@ header img {
   align-items: center;
 }
 
-#centreded{
 
-  margin: 0 auto;
-
+#caixaDosPersonagens{
+  
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
 }
