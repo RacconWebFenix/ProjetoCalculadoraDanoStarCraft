@@ -57,8 +57,25 @@
     box-shadow:none
 }
 
+
+.imagensAtaqueGifs{
+    display: flex;
+    padding: 1px;
+    flex-direction: column;
+    width: 5rem;
+    box-shadow: 0 1px 10px black ; 
+    border-radius: 15px;
+    margin: 25px;
+    text-shadow: 0 1px 10px black ;
+    cursor: pointer;
+}
+
+
 @media (max-width: 800px){
     #gisfCards{
         flex-direction: column;
+    }
+    .imagensAtaqueGifs{
+        align-self: center;
     }
 }
