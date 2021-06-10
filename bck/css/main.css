@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+}
+
+.conteudosCarsEPersonagens {
+  display: flex;
+  justify-content: center;
+}
+

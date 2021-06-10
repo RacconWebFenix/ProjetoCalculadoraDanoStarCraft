@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+}
+
+header img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 0.2rem;
+  max-width: 5rem;  
+  color: white;
+  border: 1px solid black;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px;
+}
+
+#headerLogo img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 15rem; 
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    padding: 5px;
+}
+
+.container{
+  justify-content: center;
+  align-items: center;
+}
+
+
+#caixaDosPersonagens{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+
+#containerButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rem;
+}

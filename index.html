@@ -4,138 +4,119 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
+    <link rel="stylesheet" href="./css/gifs.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Calculadora de Dano SC2 Blue</title>
+    <title>Projeto Calculadora de Dano Star Craft - Blue Edtech</title>
   </head>
   <body>
     <header id="header">
-      <img src="./img/logo-blue-croped.gif" alt="Logo Blue" />
-    </header>
-    <div id="headerLogo">
-      <img src="./img/logoStrarCraft.png" alt="Star Craft 2" />
-    </div>
-    <div id="caixaDosPersonagens">
-      <div id="centreded">
-        <input type="checkbox" name="" id="bt_menu" />
-        <label for="bt_menu">&#9776;</label>
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#"
-                >Terranos
-                <div class="box"><img src="./img/terran.png" alt="" /></div>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Jim Raynor
-                      <img src="./img/jimraynor.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Tychus Findlay
-                      <img src="./img/tycus.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Nova
-                      <img src="./img/nova.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <img src="./img/logo-blue-croped.gif" alt="Logo Blue" />
+      </header>
+      <div id="headerLogo">
+        <img src="./img/logoStrarCraft.png" alt="Star Craft 2" />
       </div>
-      <div id="centreded">
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#"
-                >Protoss
-                <div class="box"><img src="./img/protoss.png" alt="" /></div>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Selendis
-                      <img src="./img/selendis.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Zerathrul
-                      <img src="./img/zerathrul.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Artanis
-                      <img src="./img/artanis.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div id="centreded">
-        <input type="checkbox" name="" id="bt_menu" />
-        <label for="bt_menu">&#9776;</label>
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="#"
-                >Zergs
-                <div class="box"><img src="./img/zergs.png" alt="" /></div>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Sarah Kerrigan
-                      <img src="./img/kerrigan.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Zagara
-                      <img src="./img/zagara.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="box">
-                      Dehaka
-                      <img src="./img/dehaka.png" alt="" />
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+    <div class="row">
+      <div id="gisfCards">
+        <div class="column">
+          <div class="card">
+            Protoss
+            <div class="logosRace">
+              <img
+                src="./img/protoss.png"
+                width="80px"
+                alt=""
+                id="logoProtoss"
+                onclick="testeCor()"
+              />
+            </div>
+            <div class="conteudosCarsEPersonagens">
+              <div id="gisfCards">
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/artanis.gif" alt="" />
+                </div>
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/selendis.gif" alt="" />
+                </div>
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/zerathul.gif" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="botaoDano">
+              <button class="btn btn-green">Calcular Dano</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Fechamento Centered  -->
+    <div class="row">
+      <div id="gisfCards">
+        <div class="column">
+          <div class="card">
+            Terranos
+            <div class="logosRace">
+              <img
+                src="./img/terran.png"
+                width="80px"
+                alt=""
+                id="logoProtoss"
+                onclick="testeCor()"
+              />
+            </div>
+            <div class="conteudosCarsEPersonagens">
+              <div id="gisfCards">
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/jym.gif" alt="" />
+                </div>
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/tycus.gif" alt="" />
+                </div>
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/nova.gif" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="botaoDano">
+                <button class="btn btn-green">Calcular Dano</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="gisfCards">
+        <div class="column">
+          <div class="card">
+            Zergs
+            <div class="logosRace">
+              <img
+                src="./img/zergs.png"
+                width="80px"
+                alt=""
+                id="logoProtoss"
+                onclick="testeCor()"
+              />
+            </div>
+            <div class="conteudosCarsEPersonagens">
+              <div id="gisfCards">
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/kerrigan.gif" alt="" />
+                </div>
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/dehaka.gif" alt="" />
+                </div>
+                <div class="imagensGifs">
+                  <img src="./img/portraitGifs/zagara.gif" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="botaoDano">
+                <button class="btn btn-green">Calcular Dano</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

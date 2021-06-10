@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="./css/style2.css" />
+  <body>
+    <div class="personagem">
+      <div class="w3-container">
+        <div class="allPers">
+          <div class="w3-dropdown-click">
+            <button onclick="terran()" class="w3-button w3-black">
+              <img src="./img/terran.png" style="width: 5rem" alt="" />
+            </button>
+            <div
+              id="terran"
+              class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom"
+            >
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/jym.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/tycus.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/nova.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="w3-dropdown-click">
+            <button onclick="protoss()" class="w3-button w3-black">
+              <img src="./img/protoss.png" style="width: 4.3rem" alt="" />
+            </button>
+            <div
+              id="protoss"
+              class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom"
+            >
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/artanis.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/selendis.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/zerathul.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="w3-dropdown-click">
+            <button onclick="zergs()" class="w3-button w3-black">
+              <img src="./img/zergs.png" style="width: 5rem" alt="" />
+            </button>
+            <div
+              id="zergs"
+              class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom"
+            >
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/kerrigan.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/dehaka.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+              <a href="#" class="w3-bar-item w3-button"
+                ><img
+                  src="./img/portraitGifs/zagara.gif"
+                  style="width: 10rem"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- </div> do container da style 2 -->
+      </div>
+    </div>
+    <div>
+        o que vem membixo?
+    </div>
+    <script>
+      function protoss() {
+        var x = document.getElementById("protoss");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      function terran() {
+        var x = document.getElementById("terran");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      function zergs() {
+        var x = document.getElementById("zergs");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
