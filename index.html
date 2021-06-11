@@ -4,131 +4,257 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/cards.css" />
-    <link rel="stylesheet" href="./css/gifs.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Projeto Calculadora de Dano Star Craft - Blue Edtech</title>
+    <link rel="stylesheet" href="/css/bordas.css" />
+    <link rel="stylesheet" href="/css/botaoDano.css" />
+    <link rel="stylesheet" href="/css/zagara.css" />
+    <link rel="stylesheet" href="/css/dehaka.css" />
+    <link rel="stylesheet" href="/css/kerrigan.css" />
+    <link rel="stylesheet" href="/css/nova.css" />
+    <link rel="stylesheet" href="/css/tycus.css" />
+    <link rel="stylesheet" href="/css/jim.css" />
+    <link rel="stylesheet" href="/css/artanis.css" />
+    <link rel="stylesheet" href="/css/selendis.css" />
+    <link rel="stylesheet" href="/css/zerathul.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/imagens.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Projeto Calculadora de Dado - StarCraft 2 - Blue Edtech</title>
   </head>
   <body>
     <header id="header">
-        <img src="./img/logo-blue-croped.gif" alt="Logo Blue" />
-      </header>
-      <div id="headerLogo">
-        <img src="./img/logoStrarCraft.png" alt="Star Craft 2" />
-      </div>
-    <div class="row">
-      <div id="gisfCards">
-        <div class="column">
-          <div class="card">
-            Protoss
-            <div class="logosRace">
-              <img
-                src="./img/protoss.png"
-                width="80px"
-                alt=""
-                id="logoProtoss"
-                onclick="testeCor()"
-              />
-            </div>
-            <div class="conteudosCarsEPersonagens">
-              <div id="gisfCards">
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/artanis.gif" alt="" />
-                </div>
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/selendis.gif" alt="" />
-                </div>
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/zerathul.gif" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="conteudosCardsAtaque">
-              <div id="gisfCards">
-                <div class="imagensAtaqueGifs">
-                  <img src="./img/portraitGifs/kerrigan.gif" alt="" />
-                </div>
-                <div class="imagensAtaqueGifs">
-                  <img src="./img/portraitGifs/dehaka.gif" alt="" />
-                </div>
-                <div class="imagensAtaqueGifs">
-                  <img src="./img/portraitGifs/zagara.gif" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="botaoDano">
-              <button class="btn btn-green">Calcular Dano</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <img src="./img/logo-blue-croped.gif" alt="Logo Blue" />
+    </header>
+    <div id="headerLogo">
+      <img src="./img/logoStrarCraft.png" alt="Star Craft 2" />
     </div>
-    <div class="row">
-      <div id="gisfCards">
-        <div class="column">
-          <div class="card">
-            Terranos
-            <div class="logosRace">
-              <img
-                src="./img/terran.png"
-                width="80px"
-                alt=""
-                id="logoProtoss"
-                onclick="testeCor()"
-              />
-            </div>
-            <div class="conteudosCarsEPersonagens">
-              <div id="gisfCards">
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/jym.gif" alt="" />
+    <div id="container">
+      <div id="cabecalho">Calculadora de Dano Star Craft 2</div>
+      <div id="corpo">
+        <div class="box1">Escolha sua Raça, Personagem e Tipo de Ataque</div>
+        <div id="box2nomes"></div>
+        <div id="box3imagens">
+          <div class="box2">
+            <img id="logoTerranos" src="/img/terran.png" alt="" />
+            <div class="box3">
+              <div id="nova">
+                <img
+                  class="terranos"
+                  src="/img/portraitGifs/nova.gif"
+                  alt=""
+                />
+                <div id="armasNova">
+                  <img
+                    class="armasNova"
+                    src="/img/ataques/terranos/ghost.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasNova"
+                    src="/img/ataques/terranos/viking.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasNova"
+                    src="/img/ataques/terranos/raven.gif"
+                    alt=""
+                  />
                 </div>
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/tycus.gif" alt="" />
+              </div>
+              <div id="jim">
+                <img class="terranos" src="/img/portraitGifs/jym.gif" alt="" />
+                <div id="armasJim">
+                  <img
+                    class="armasJim"
+                    src="/img/ataques/terranos/marine.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasJim"
+                    src="/img/ataques/terranos/reaper.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasJim"
+                    src="/img/ataques/terranos/battlecruiser.gif"
+                    alt=""
+                  />
                 </div>
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/nova.gif" alt="" />
+              </div>
+              <div id="tycus">
+                <img
+                  class="terranos"
+                  src="/img/portraitGifs/tycus.gif"
+                  alt=""
+                />
+                <div id="armasTycus">
+                  <img
+                    class="armasTycus"
+                    src="/img/ataques/terranos/marauder.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasTycus"
+                    src="/img/ataques/terranos/siegeTank.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasTycus"
+                    src="/img/ataques/terranos/thor.gif"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-            <div class="botaoDano">
-                <button class="btn btn-green">Calcular Dano</button>
+          </div>
+          <div class="box2">
+            <img id="logoProtoss" src="/img/protoss.png" alt="" />
+            <div class="box3">
+              <div id="artanis">
+                <img
+                  class="protoss"
+                  src="/img/portraitGifs/artanis.gif"
+                  alt=""
+                />
+                <div id="armasArtanis">
+                  <img
+                    class="armasArtanis"
+                    src="/img/ataques/protoss/zealot.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasArtanis"
+                    src="/img/ataques/protoss/carrier.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasArtanis"
+                    src="/img/ataques/protoss/immortal.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="selendis">
+                <img
+                  class="protoss"
+                  src="/img/portraitGifs/selendis.gif"
+                  alt=""
+                />
+                <div id="armasSelendis">
+                  <img
+                    class="armasSelendis"
+                    src="/img/ataques/protoss/highTemplar.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasSelendis"
+                    src="/img/ataques/protoss/mothership.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasSelendis"
+                    src="/img/ataques/protoss/colossus.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="zerathul">
+                <img
+                  class="protoss"
+                  src="/img/portraitGifs/zerathul.gif"
+                  alt=""
+                />
+                <div id="armasZerathul">
+                  <img
+                    class="armasZerathul"
+                    src="/img/ataques/protoss/darkTemplar.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasZerathul"
+                    src="/img/ataques/protoss/phoenix.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasZerathul"
+                    src="/img/ataques/protoss/archon.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box2">
+            <img id="logoZergs" src="/img/zergs.png" alt="" />
+            <div class="box3">
+              <div id="kerrigan">
+                <img
+                  class="zergs"
+                  src="/img/portraitGifs/kerrigan.gif"
+                  alt=""
+                />
+                <div id="armasKerrigan">
+                  <img
+                    class="armasKerrigan"
+                    src="/img/ataques/zergs/zergling.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasKerrigan"
+                    src="/img/ataques/zergs/mutalisk.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasKerrigan"
+                    src="/img/ataques/zergs/ultralisk.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="dehaka">
+                <img class="zergs" src="/img/portraitGifs/dehaka.gif" alt="" />
+                <div id="armasDehaka">
+                  <img
+                    class="armasDehaka"
+                    src="/img/ataques/zergs/roach.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasDehaka"
+                    src="/img/ataques/zergs/corruptor.gif"
+                  />
+                  <img
+                    class="armasDehaka"
+                    src="/img/ataques/zergs/hydralisk.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="zagara">
+                <img class="zergs" src="/img/portraitGifs/zagara.gif" alt="" />
+                <div id="armasZagara">
+                  <img
+                    class="armasZagara"
+                    src="/img/ataques/zergs/baneling.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasZagara"
+                    src="/img/ataques/zergs/broodLord.gif"
+                    alt=""
+                  />
+                  <img
+                    class="armasZagara"
+                    src="/img/ataques/zergs/infestor.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div id="gisfCards">
-        <div class="column">
-          <div class="card">
-            Zergs
-            <div class="logosRace">
-              <img
-                src="./img/zergs.png"
-                width="80px"
-                alt=""
-                id="logoProtoss"
-                onclick="testeCor()"
-              />
-            </div>
-            <div class="conteudosCarsEPersonagens">
-              <div id="gisfCards">
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/kerrigan.gif" alt="" />
-                </div>
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/dehaka.gif" alt="" />
-                </div>
-                <div class="imagensGifs">
-                  <img src="./img/portraitGifs/zagara.gif" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="botaoDano">
-                <button class="btn btn-green">Calcular Dano</button>
-            </div>
-          </div>
-        </div>
+      <div class="botaoDano">
+        <button class="btn btn-green">Calcular Dano</button>
       </div>
     </div>
   </body>

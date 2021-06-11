@@ -1,0 +1,36 @@
+#logoTerranos{
+    width: 5rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+#logoProtoss{
+    width: 5rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+#logoZergs{
+    width: 5rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+.terranos{
+    width: 0;
+}
+
+.protoss{
+    width: 0;
+}
+
+.zergs{
+    width: 0;
+}
+
+.box2:hover .box3 img{
+    width: 7rem;
+    height: 7rem;
+    margin: 5px;
+    transition: all 2s;
+}

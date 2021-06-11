@@ -1,0 +1,14 @@
+#armasSelendis img{
+    position: relative;
+    z-index: -1;
+    width: 0;
+    height: 0;
+}
+
+#selendis:hover #armasSelendis img{
+    flex-direction: column;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+    transition: all 2s;
+}
