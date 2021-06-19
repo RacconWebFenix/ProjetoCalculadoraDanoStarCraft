@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Calculadora de Dano StarCraft 2</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="bloco">
+        <img
+          src="../static/img/logo-blue-croped.gif"
+          alt="Imagem da Blue"
+          width="200"
+        />
+      </div>
+      <!-- Inicio Raça -->
+      {% for dado in dados %}
+      <div class="cardRaca">
+        <label for="{{dado.racaNome}}">
+          <div class="racaImg">
+            <b>{{dado.racaNome}}</b>
+            <img src="{{dado.imagemRaca}}" alt="" srcset="" class="racaImagem" />
+            <input
+              type="radio"
+              name="raca"
+              id="{{dado.racaNome}}"
+              value="{{dado.racaNome}}"
+              onchange="selecionarRaca()"
+              onclick="selecaoDeRaca()"
+              class="cardRacaSelecionar"
+              hidden
+            />
+          </div>
+        </label>
+        <!-- fechamento cardRaca -->
+      </div>
+      <!-- Inicio Personagem -->
+      <div class="cardPersonagem">
+        <!-- Inicio Personagem -->
+        {% for pers in dado.personagens %}
+        <label for="{{pers.nome}}">
+      
+          <div class="cardInterno">
+            <!-- inicio cardInterno -->
+            <div class="personagemImg">
+              <div class="nomePers">
+                <b>{{pers.nome}}</b>
+              </div>
+              <img src="{{pers.imgPers}}" alt="" />
+              <input
+              type="radio"
+              name="personagem"
+              id="{{pers.nome}}"
+              value="{{pers.nome}}"
+              class="selecionarPersonagens"
+              onchange="selecao()"
+              hidden
+              />
+              <div class="desc">
+                <b>{{pers.descricaoPers}}</b> 
+              </div>
+            </div>
+            <!-- final cardInterno -->
+            <div class="armamentos">
+              {% for arms in pers.armamento %}
+              <div class="arma">
+                <img src="{{arms}}" alt="" />
+              </div>
+              {% endfor %}
+              <!-- fechamento do Armamento -->
+            </div>
+          </div>
+        </label>
+
+        <!-- fechamento do Personagem -->
+        {% endfor %}
+
+        <!-- fechamento cardPersonagem -->
+      </div>
+      {% endfor %}
+      <!-- fechamento da Raça -->
+      <!-- fechamento do Container -->
+      <div class="botaoDano">
+        <button id="botao" class="btn btn-green">Calcular Dano</button>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

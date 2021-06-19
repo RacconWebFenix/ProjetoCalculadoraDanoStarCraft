@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.racaImg,
+.personagemImg,
+img {
+  margin: 5px;
+  width: 8rem;
+}
+
+#container {
+  border: 8px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardRaca {
+  text-align: center;
+  border: 1px solid red;
+  display: flex;
+  color: yellowgreen;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s;
+}
+
+.cardPersonagem {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  transition: all 1s;
+  border: 2px solid gray;
+  opacity: -1;
+  transition: all 1s;
+  z-index: -1;
+  margin: -16rem;
+}
+
+.cardInterno {
+  display: flex;
+  color: yellowgreen;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid red;
+  margin: 2px;
+  transition: all 1s;
+}
+.personagemImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 21rem;
+  max-width: 18rem;
+  max-height: 21rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.armamentos {
+  display: flex;
+}
+
+.arma {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.desc {
+  margin: 0.5rem;
+  opacity: -1;
+  transition: all 1s;
+  color: yellowgreen;
+}
+.nomePers {
+  margin: 10px;
+  color: yellowgreen;
+}
+
+
+.btn {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: green;
+  box-shadow: 0 5px 0 #006000;
+}
+
+.btn-green:hover {
+  background-color: #003f00;
+  box-shadow: 0 5px 0 #006000;
+}
+
+.btn-green:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.armamentos{
+  z-index: -1;
+  margin-top: -1rem;
+  opacity: 0;
+  border-radius: 15rem;
+}
+
+.armamentos img{
+  border-radius: 5rem;
+}
