@@ -1,13 +1,28 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  transition: all 2s;
 }
 
 .racaImg,
 .personagemImg,
 img {
+  cursor: pointer;
   margin: 5px;
   width: 8rem;
+}
+#headerText{
+  text-indent: initial;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  color: yellowgreen;
+  text-shadow: 0 0 5rem yellowgreen;
+  font-weight: 900;
+  font-size: 2rem;
+  align-items: center;
+
 }
 
 #container {
@@ -20,7 +35,7 @@ img {
 
 .cardRaca {
   text-align: center;
-  border: 1px solid red;
+  cursor: pointer;
   display: flex;
   color: yellowgreen;
   flex-direction: column;
@@ -33,7 +48,6 @@ img {
   flex-direction: row;
   text-align: center;
   transition: all 1s;
-  border: 2px solid gray;
   opacity: -1;
   transition: all 1s;
   z-index: -1;
@@ -46,7 +60,6 @@ img {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid red;
   margin: 2px;
   transition: all 1s;
 }
@@ -55,11 +68,10 @@ img {
   flex-direction: column;
   align-items: center;
   width: 20rem;
-  height: 21rem;
-  max-width: 18rem;
-  max-height: 21rem;
+  height: 20rem;
   padding: 1rem;
-  justify-content: center;
+  cursor: pointer;
+  border-radius: 2rem;
 }
 
 .armamentos {
@@ -68,20 +80,21 @@ img {
 
 .arma {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .desc {
   margin: 0.5rem;
+  font-size: 01vw;
   opacity: -1;
   transition: all 1s;
   color: yellowgreen;
+  text-align: justify;
 }
 .nomePers {
   margin: 10px;
   color: yellowgreen;
 }
-
 
 .btn {
   font-size: 14px;
@@ -91,6 +104,7 @@ img {
   border: none;
   padding: 10px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .btn-green {
@@ -109,13 +123,57 @@ img {
   box-shadow: none;
 }
 
-.armamentos{
+.armamentos {
   z-index: -1;
   margin-top: -1rem;
   opacity: 0;
   border-radius: 15rem;
 }
 
-.armamentos img{
+.armamentos img {
   border-radius: 5rem;
+}
+
+#fundos {
+  position: absolute;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+#fundos img {
+  display: flex;
+  width: 50rem;
+  max-width: 50rem;
+  
+}
+
+.botaoDano{
+  margin-top: 1rem;
+}
+
+.linhaDeDano{
+  text-indent: initial;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  color: yellowgreen;
+  text-shadow: 0 0 5rem yellowgreen;
+  font-weight: 900;
+  font-size: 2rem;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 600px){
+  .cardPersonagem{
+      flex-direction: column;
+      align-items: center;
+  }
+  .personagemImg{
+    max-height: 12rem;
+  }
+  #fundos img{
+    max-width: 12rem
+  }
+ 
 }

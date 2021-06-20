@@ -6,6 +6,7 @@
         "personagens": [
             {
                 "nome": "Tycus Findlay",
+                "hp": 170,
                 "imgPers": "/static/img/portraitGifs/tycus.gif",
                 "descricaoPers": "Tychus Findlay é um enigmatico Soldado Terrano de StarCraft II, que tem sido várias coisas para várias pessoas. Em Heroes of the Storm, Tychus faz o papel de um duro Assassino, e ele está feliz em usar sua arma como apresentação.",
                 "armamento": [
@@ -16,6 +17,7 @@
             },
             {
                 "nome": "Nova",
+                "hp": 150,
                 "imgPers": "/static/img/portraitGifs/nova.gif",
                 "descricaoPers": "Dentro deste caldeirão fervente de contenda e subversão, uma jovem conhecida apenas como Nova mostra o potencial para se tornar o agente Fantasma mais letal e promissor de Mengsk. Utilizando uma combinação de pura aptidão física, poder psíquico inato e tecnologia avançada, Nova pode atacar em qualquer lugar com a maior furtividade.",
                 "armamento": [
@@ -26,6 +28,7 @@
             },
             {
                 "nome": "Jim Raynor",
+                "hp": 160,
                 "imgPers": "/static/img/portraitGifs/jim.gif",
                 "descricaoPers": "Jim Raynor é um ex- marechal terrano que se tornou rebelde, que se tornou uma das principais figuras do setor Koprulu através de seu trabalho para derrubar a Confederação e, mais tarde, na luta contra o sucessor da Confederação, o Domínio . Raynor é um dos poucos terranos a se envolver em uma aliança de longo prazo com os protoss.",
                 "armamento": [
@@ -43,6 +46,7 @@
         "personagens": [
             {
                 "nome": "Artanis",
+                "hp": 170,
                 "imgPers": "/static/img/portraitGifs/artanis.gif",
                 "descricaoPers": "Artanis é o líder dos Daelaam . Um guerreiro renomado, ele busca unificar seu povo sitiado e não deixará nada ficar em seu caminho para restaurar a glória dos protoss.",
                 "armamento": [
@@ -53,6 +57,7 @@
             },
             {
                 "nome": "Selendis",
+                "hp": 160,
                 "imgPers": "/static/img/portraitGifs/selendis.gif",
                 "descricaoPers": "Sob o Império Protoss , Selendis serviu como elo de ligação entre o Executor Tassadar e Artanis , servindo como protoge deste último. Na reorganização após a Grande Guerra , ela foi promovida a executora, atuando como assistente de Artanis e comandando as forças militares combinadas dos protoss. ",
                 "armamento": [
@@ -63,6 +68,7 @@
             },
             {
                 "nome": "Zerathul",
+                "hp": 150,
                 "imgPers": "/static/img/portraitGifs/zerathul.gif",
                 "descricaoPers": "O Prelado das Trevas Zeratul era um místico Nerazim reverenciado . Durante a Grande Guerra, Zeratul aliou-se ao Khalai Tassadar, apesar de seu ódio pelo Conclave que uma vez baniu seus antepassados. O Dark Templar pessoalmente matou o cerebrado Zasz, mas por sua vez, acidentalmente deu à Overmind a localização de Aiur.",
                 "armamento": [
@@ -80,8 +86,9 @@
         "personagens": [
             {
                 "nome": "Sarah Kerrigan",
+                "hp": 170,
                 "imgPers": "/static/img/portraitGifs/kerrigan.gif",
-                "descricaoPers": "Sarah Louise Kerrigan era uma mulher terrana psíquica . Ela começou sua carreira como um fantasma confederado e mais tarde se tornou a segunda no comando dos Filhos de Korhal. Após a traição de Arcturus Mengsk , ela foi capturada e infestada pelo Enxame Zerg, tornando-se a autoproclamada Rainha das Lâminas (também conhecida como Rainha Zerg ) e líder do Enxame.",
+                "descricaoPers": "Sarah Louise Kerrigan era uma mulher terrana psíquica . Ela começou sua carreira como um fantasma confederado e mais tarde se tornou a segunda no comando dos Filhos de Korhal. Após a traição de Arcturus Mengsk , capturada e infestada pelo Enxame Zerg, tornando-se a Rainha das Lâminas  e líder do Enxame Zergs.",
                 "armamento": [
                     "/static/img/ataques/zergs/zergling.gif",
                     "/static/img/ataques/zergs/mutalisk.gif",
@@ -91,6 +98,7 @@
             {
                 "nome": "Dehaka",
                 "imgPers": "/static/img/portraitGifs/dehaka.gif",
+                "hp": 160,
                 "descricaoPers": "Dehaka é um líder de matilha zerg primal de Zerus. Ele estava entre os últimos líderes da matilha zergs.",
                 "armamento": [
                     "/static/img/ataques/zergs/roach.gif",
@@ -101,6 +109,7 @@
             {
                 "nome": "Zagara",
                 "imgPers": "/static/img/portraitGifs/zagara.gif",
+                "hp": 150,
                 "descricaoPers": "Zagara é uma Mãe de Casta zerg, a última defensora de Char. Ela é leal ao Enxame e pensa sempre no que é melhor para os zergs. Ela é ambiciosa e vê outras formas de vida como débeis.",
                 "armamento": [
                     "/static/img/ataques/zergs/baneling.gif",

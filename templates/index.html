@@ -9,6 +9,14 @@
   </head>
   <body>
     <div id="container">
+      <div id="fundos">
+        <img
+          src="/static/img/logoStrarCraft.png"
+          id="imagemPersFundos"
+          alt=""
+          srcset=""
+        />
+      </div>
       <div class="bloco">
         <img
           src="../static/img/logo-blue-croped.gif"
@@ -16,13 +24,23 @@
           width="200"
         />
       </div>
+
+      <div id="headerText">
+        <span>Calculadora de Dano StartCraft II</span>
+        <span>Escolha sua Raça e Personagem</span>
+      </div>
       <!-- Inicio Raça -->
       {% for dado in dados %}
       <div class="cardRaca">
         <label for="{{dado.racaNome}}">
           <div class="racaImg">
             <b>{{dado.racaNome}}</b>
-            <img src="{{dado.imagemRaca}}" alt="" srcset="" class="racaImagem" />
+            <img
+              src="{{dado.imagemRaca}}"
+              alt=""
+              srcset=""
+              class="racaImagem"
+            />
             <input
               type="radio"
               name="raca"
@@ -42,7 +60,6 @@
         <!-- Inicio Personagem -->
         {% for pers in dado.personagens %}
         <label for="{{pers.nome}}">
-      
           <div class="cardInterno">
             <!-- inicio cardInterno -->
             <div class="personagemImg">
@@ -50,17 +67,19 @@
                 <b>{{pers.nome}}</b>
               </div>
               <img src="{{pers.imgPers}}" alt="" />
+              <span class="hpPersonagem"  hidden>{{pers.hp}}</span>
               <input
-              type="radio"
-              name="personagem"
-              id="{{pers.nome}}"
-              value="{{pers.nome}}"
-              class="selecionarPersonagens"
-              onchange="selecao()"
-              hidden
+                type="radio"
+                name="personagem"
+                id="{{pers.nome}}"
+                value="{{pers.nome}}"
+                class="selecionarPersonagens"
+                onchange="selecao()"
+                hidden
               />
+              <audio src="" class="audios" hidden></audio>
               <div class="desc">
-                <b>{{pers.descricaoPers}}</b> 
+                <b>{{pers.descricaoPers}}</b>
               </div>
             </div>
             <!-- final cardInterno -->
@@ -87,6 +106,9 @@
         <button id="botao" class="btn btn-green">Calcular Dano</button>
       </div>
     </div>
+    <div class="linhaDeDano">
+      <span id="dano">Teste suas forças!</span>
+  </div>
     <script src="/static/script.js"></script>
   </body>
 </html>
