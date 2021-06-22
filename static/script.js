@@ -130,7 +130,7 @@ botao.addEventListener("click", () => {
   let resultado = "Dano: " + danoDados + "! ";
 
   if (danoDados >= hpPersonagemSelecionado) {
-    resultado += `Você conseguiu destruir ${nomePersonagemSelecionado} com suas forças!`;
+    resultado += `Você conseguiu destruir ${nomePersonagemSelecionado} com suas forças! Deseja confirmar sua vitória?`;
     vitoria = true
     if (vitoria = true){
       let confirmar = confirm(resultado)
