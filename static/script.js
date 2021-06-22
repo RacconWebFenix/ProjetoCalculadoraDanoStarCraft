@@ -114,7 +114,7 @@ function rolarOsDados() {
   const max = Math.floor(200);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
+let vitoria = false;
 botao.addEventListener("click", () => {
   selecao();
   if (
@@ -131,7 +131,17 @@ botao.addEventListener("click", () => {
 
   if (danoDados >= hpPersonagemSelecionado) {
     resultado += `Você conseguiu destruir ${nomePersonagemSelecionado} com suas forças!`;
+    vitoria = true
+    if (vitoria = true){
+      let confirmar = confirm(resultado)
+      if (confirmar == false){
+        return window.location.href = "/";
+      } else{
+         return window.location.href = "/vitoria";
+      }
+    }
   } else {
+    vitoria = false
     resultado += `${nomePersonagemSelecionado} ainda impera nas galaxias, tente novamente!`;
   }
  
