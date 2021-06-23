@@ -12,6 +12,7 @@ const audios = document.querySelectorAll(".audios");
 const mensagemDeDano = document.querySelector("#dano");
 const botaoDano = document.querySelector("#botao");
 const hpPersonagem = document.querySelectorAll(".hpPersonagem");
+const testativas = document.querySelector("#tentativas")
 
 
 let nomesPersonagem;
@@ -115,20 +116,23 @@ function rolarOsDados() {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 let vitoria = false;
+let hp = 3;
 botao.addEventListener("click", () => {
   selecao();
+
   if (
     !nomesPersonagem ||
     nomesPersonagem == "Zergs" ||
     nomesPersonagem == "Protoss" ||
     nomesPersonagem == "Terranos"
-  ) {
-    alert("Selecione a raça e o personagem para calcular o dano");
-    return;
-  }
-  const danoDados = rolarOsDados();
-  let resultado = "Dano: " + danoDados + "! ";
-
+    ) {
+      alert("Selecione a raça e o personagem para calcular o dano");
+      return;
+    }
+    
+    const danoDados = rolarOsDados();
+    let resultado = "Dano: " + danoDados + "! ";
+  
   if (danoDados >= hpPersonagemSelecionado) {
     resultado += `Você conseguiu destruir ${nomePersonagemSelecionado} com suas forças! Deseja confirmar sua vitória?`;
     vitoria = true
@@ -143,7 +147,15 @@ botao.addEventListener("click", () => {
   } else {
     vitoria = false
     resultado += `${nomePersonagemSelecionado} ainda impera nas galaxias, tente novamente!`;
+    hp--
+    if (hp >= 1){
+      alert(`Dano: ${danoDados}! Você possui ${hp} tentativas.`)
+      tentativas.innerHTML = `Tentativas restantes ${hp}`
+    }else {
+      alert(`Você possui ${hp} tentativas.`)
+      return window.location.href = "/derrota";
+    }  
   }
- 
+
   mensagemDeDano.innerHTML = resultado;
 });
